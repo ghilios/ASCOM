@@ -460,6 +460,11 @@ namespace TA.NexDome.DeviceInterface
                 HighPrecisionSlewStrategy(azimuth);
             }
 
+        public void SyncAzimuth(double azimuth)
+            {
+            stateMachine.SyncAzimuth(azimuth);
+            }
+
         private void HighPrecisionSlewStrategy(double azimuth)
             {
             var circumference = (double)stateMachine.DomeCircumference;
